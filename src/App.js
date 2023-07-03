@@ -5,7 +5,7 @@ import Plan from './plan';
 class App extends Component {
   state = {
     items : [],
-    text : " "
+    text : ""
   }
 
   handleChange = (e) =>{
@@ -30,9 +30,9 @@ class App extends Component {
   return (
     <>
       <div className='w-screen h-screen grid place-items-center'>
-        <div className="p-3 bg-gray-800 max-w-[300px] rounded-sm">
+        <div className="p-3 bg-gray-800 w-[330px] rounded-sm">
           <h1 className="text-white font-3xl font-medium text-center">Todo App</h1>
-          <div className="mt-3 block flex gap-3 flex-wrap">
+          <div className="mt-3 flex gap-3 flex-wrap">
             <input type="text"
               className="p-2 rounded outline-none border-none"
               value={this.state.text}
